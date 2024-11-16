@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário da Academia</title>
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="slide1()">
+    <div id="cabeçalho">
+        <div class="texto">ACADEMIA DA ISA</div>
+        <div id="container">
+            <a href="index.html" class="botao">Home</a>
+            <a href="formulario.html" class="botao">Formulário</a>
+        </div>
+    </div>
+</body>
+
+<html>
+<div id="meioa">
+    <div class="fundo">
+        <h1>DADOS PESSOAIS</h1>
+    </div>
+    <!DOCTYPE html>
+    <html lang="pt-br">
+
+    <script language="JavaScript">
+        function mask(t, mask) {
+            var i = t.value.length;
+            var exit = mask.substring(1, 0);
+            var text = mask.substring(i)
+            if (text.substring(0, 1) != exit) {
+                t.value += text.substring(0, 1);
+            }
+        }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIO</title>
+
+    <body>
+        <br>
+        <div id="coisas">
+            <div class="coisasleft">
+                <form>
+                    Nome:<br>
+                    <input type="text" name="nome" id="nome" size="20">
+                    <br>
+                    Endereço:<br>
+                    <input type="text" name="endereco" id="endereco" size="20">
+                    <br>
+                    Cidade:<br>
+                    <input type="text" name="cidade" id="cidade" size="20">
+                    <br>
+                    Estado:<br>
+                    <select>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="PR">Parana</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RJ">Rio De Janeiro</option>
+                    </select><br><br>
+                    Telefone Residencial:<br>
+                    <input type="text" name="telefone" size="20" id="telefone" onkeypress="mask(this,'## #####-####')"
+                        maxlength="13"><br>
+                    Telefone Celular:<br>
+                    <input type="text" name="telefonec" size="20" id="telefonec" onkeypress="mask(this,'## #####-####')"
+                        maxlength="13"><br>
+                    CEP:<br>
+                    <input type="text" name="cep" id="cep" size="10" onkeypress="mask(this, '##.###-###')"
+                        maxlength="10">
+
+                    </label><br>
+                </form>
+            </div>
+            <div class="coisasright">
+                <form>
+                    Data Nascimento:<br>
+                    <input type="text" name="data" size="20" id="data" onkeypress="mask(this,'##/##/##')" maxlength="8">
+                    <br>
+                    CPF:<br>
+                    <input type="text" name="cpf" size="20" id="cpf" onkeypress="mask(this,'###.###.##')"
+                        maxlength="10">
+                    <br>
+                    RG:<br>
+                    <input type="text" name="rg" size="20" id="rg" onkeypress="mask(this,'###.###.###')" maxlength="9">
+                    <br><br>
+                    SEXO:
+                    <br><br>
+                    <label>
+                        <input type="radio" name="genero" value="masculino">
+                        Masculino
+                    </label><br>
+
+                    <label>
+                        <input type="radio" name="genero" value="feminino">
+                        Feminino
+                    </label><br>
+                    <label>
+                        <input type="radio" name="genero" value="outro">
+                        Outro
+                    </label><br>
+
+
+                </form>
+            </div>
+        </div><br>
+
+        <div class="fundo">
+            <h1>MODALIDADES</h1>
+        </div>
+        <h2>Modalidade:</h2>
+        <label for="musculacao">Musculação</label>
+        <input type="checkbox" id="musculacao" name="modalidade" value="musculacao"><br>
+        <label for="pilates">Pilates</label>
+        <input type="checkbox" id="pilates" name="modalidade" value="pilates"><br>
+        <label for="Crossfit">Crossfit</label>
+        <input type="checkbox" id="Crossfit" name="modalidade" value="Crossfit"><br><br>
+
+        <h2>Dias da Semana:</h2>
+        <label for="segunda">Segunda</label>
+        <input type="checkbox" id="segunda" name="dias_semana" value="segunda">
+        <label for="terca">Terça</label>
+        <input type="checkbox" id="terca" name="dias_semana" value="terca">
+        <label for="quarta">Quarta</label>
+        <input type="checkbox" id="quarta" name="dias_semana" value="quarta"><br><br>
+
+
+        <h2>Período:</h2>
+        <label for="matutino">Matutino</label>
+        <input type="radio" id="matutino" name="periodo" value="matutino">
+        <label for="vespertino">Vespertino</label>
+        <input type="radio" id="vespertino" name="periodo" value="vespertino">
+        <label for="noturno">Noturno</label>
+        <input type="radio" id="noturno" name="periodo" value="noturno"><br><br>
+
+
+        <label for="horario">Horário:</label>
+        <input type="time" id="horario" name="horario" required>
+        </fieldset>
+
+        <button type="submit">Enviar</button>
+        <button type="reset">Limpar</button>
+        </form>
+
+
+
+    </body>
+
+    </html>
+</div>
+</body>
